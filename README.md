@@ -15,6 +15,17 @@
     *   Crontab 集成：方便地通过 Linux Crontab 设置定时任务，实现自动化监控。
     *   日志记录：详细记录每次检测的运行状态和结果，便于问题排查。
 
+### 2. Website Availability Monitor (`website-availability-monitor`)
+
+*   **描述**：一个轻量级的 Shell 脚本，用于监控指定 URL 的可访问性。它会定期发送 HTTP 请求，检查网站是否可访问以及返回的 HTTP 状态码是否符合预期。如果网站出现异常，将通过电子邮件发送提醒。适用于 Linux 环境，通过 Crontab 定时执行。
+*   **路径**：[`website-availability-monitor/`](./website-availability-monitor/README.md)
+*   **功能**：
+    *   简单高效：纯 Shell 脚本实现，无需额外编程语言运行时。
+    *   灵活配置：所有配置（提醒邮箱、监控 URL 列表、期望状态码、超时时间）均集成在脚本内部，易于修改。
+    *   邮件提醒：在网站不可访问或返回非预期状态码时发送电子邮件通知。
+    *   Crontab 集成：方便地通过 Linux Crontab 设置定时任务，实现自动化监控。
+    *   日志记录：详细记录每次检测的运行状态和结果，便于问题排查。
+
 ---
 
 ## 🚀 如何使用
