@@ -7,14 +7,15 @@ LOG_FILE="ssl_cert_monitor.log"
 
 # --- 全局配置 ---
 # 接收提醒的邮箱地址，多个邮箱用逗号分隔
-RECIPIENT_EMAIL="jszsl001@163.com"
+RECIPIENT_EMAIL="your_email@example.com"
 # 提前多少天发送提醒
-WARNING_DAYS=180
+WARNING_DAYS=30
 
 # --- 域名列表 ---
 # 需要监控的域名列表，格式为 "domain.com:port" 或 "domain.com" (默认端口443)
 DOMAIN_LIST=(
-    "proxy.zheguyunproxy.asia:443"
+    "example.com:443"
+    "s.zheguyun.com"
 )
 
 # --- 函数：获取证书过期日期 ---
